@@ -111,6 +111,16 @@
                 box-shadow: 0 0.1em 0.2em var(--color-neutral-95);
                 text-align: center;
                 background: white;
+                overflow: hidden;
+                box-sizing: border-box;
+                width: calc(100% + 1em);
+
+                figure img {
+                    max-width: 100%;
+                    height: auto;
+                    display: block;
+                    object-fit: contain;
+                }
 
                 > figcaption {
                     font: 500 75% var(--font-sans);
@@ -152,15 +162,15 @@
         </header>
 
         <main>
-            <h2>Proposition: Abortion-access issues are geographically unequal</h2>
+            <h2>Proposition: Abortion-access burdens are geographically unequal.</h2>
 
             <section>
                 <h3>FOR the Proposition</h3>
                 <h4>Abortion-access issues are subject to regional variation.</h4>
 
                 <figure>
-                    <img src="images/for_viz.png" alt="Abortion-access burdens are geographically unequal" />
-                    <figcaption>Abortion inaccess is concentrated in specific regions.</figcaption>
+                    <img src="images/for_viz.png" alt="Choropleth map of the United States colored blue to red showing the percentage of women aged 15-44 living in a county with no abortion clinic. Midwest region is deepest red; West and Northeast are predominantly blue." />
+                    <figcaption>A state-level choropleth map encoding the percentage of women aged 15–44 who live in a county with no abortion clinic (Guttmacher Institute, 2020). States in the South, Midwest, and portions of Mountain West are deeply red, indicating that the majority of women in those states live far from any provider, while western and northeastern states appear blue, signaling comparatively better local access. The geographic clustering makes the regional disparity immediately legible.</figcaption>
                 </figure>
 
                 <p>Design Decisions and Rationale:</p>
@@ -174,11 +184,11 @@
 
             <section>
                 <h3>AGAINST the Proposition</h3>
-                <h4>Abortion-access is related to population size not geographic region.</h4>
+                <h4>Abortion-access burdens are driven by population size, not geographic region.</h4>
 
                 <figure>
-                    <img src="images/against_viz.png" alt="" />
-                    <figcaption>Large poulations coincide with larger provider networks, so "burden" may reflect sparsely populated areas rather than true inaccessibility.</figcaption>
+                    <img src="images/against_viz.png" alt="Bubble map of the United States where each state is represented by a circle sized by total population and colored blue by number of abortion clinics. Large, dark-blue circles appear in California, New York, and Florida. Small pale circles fill the interior of the country." />
+                    <figcaption>A proportional symbol map encoding both clinic count (blue color gradient, light = few, dark = many) and total state population (circle area) for all 50 states (Guttmacher Institute, 2020). The largest, darkest circles—representing the most populated states with the most clinics—dominate the visual field, suggesting that clinic availability tracks population rather than geography. Sparsely populated interior states appear as small, pale dots, implying that low clinic counts may simply reflect low demand rather than geographic inequity.</figcaption>
                 </figure>
 
                 <p>Design Decisions and Rationale:</p>
