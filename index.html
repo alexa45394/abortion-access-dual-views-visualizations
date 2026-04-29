@@ -144,8 +144,10 @@
 
             figure img {
                 width: 100%;
+                max-width: 600px;
                 height: auto;
                 display: block;
+                margin: 0 auto;
             }
         </style>
     </head>
@@ -207,7 +209,12 @@
             <section>
                 <h2>Final Reflection</h2>
 
-                <p>[WRITE FINAL REFLECTION PARAGRAPHS HERE.]</p>
+                <p>The most surprising aspect of this project was how little we needed to fabricate in order to make both visualizations genuinely persuasive. Every number on both maps is accurate and drawn from the same Guttmacher Institute dataset, with the only external addition being publicly available 2020 Census population figures merged in for the "against" map. What changed between the two visualizations was the choices we made about which variable to encode, which color palette to use, how to aggregate, and what to write in the title. The "for" map uses a population burden metric, a white-to-red color scale, and a declarative title that asserts an inequality. These direct the reader toward a conclusion before they look at a particular state. The "against" map introduces population as a competing variable, uses a calm blue gradient, and encodes clinic counts as presence rather than absence, steering attention toward an opposing conclusion. Neither visualization misrepresents any individual data point, but they push toward strongly different takeaways. That experience made clear that accuracy at the level of individual facts is necessary but far from sufficient for ethical visualization. </p>
+
+                <p>The hardest part of the process was deciding how much persuasion was enough without crossing into something obviously manipulative. For the "for" map, the regional pattern in the deprivation metric is stark enough that almost any honest encoding would have been persuasive, so most of our additional choices, like the red palette and the assertive title, were reinforcements of a real signal rather than fabrications of a false one. The "against" map required more deliberate construction: we had to introduce a new variable entirely, choosing to merge in Census population data, and then select encodings that would make populous states visually dominate without technically misrepresenting anything. The population-bubble map works as a counter-argument precisely because its core claim that more people means more clinics has genuine face validity, making it hard to dismiss on first glance even though it sidesteps the more meaningful question of whether women in those states actually have local access. </p>
+
+                <p>We defined the line between acceptable persuasion and misleading visualization as we worked rather than in advance.  Our earliest drafts used scatter plots and bar charts but those chart types made the argument too explicit and easy to pick apart or suffered from poor readability from over-plotting. Switching to maps forced us to make more nuanced choices: whether red or a neutral color did more work, whether a caption was guiding or manipulating, whether framing around burden felt honest or loaded. We landed on a working definition where a visualization is acceptable if the design choices amplify a pattern that genuinely exists in the data, and misleading if they manufacture an impression the data does not actually support. By that standard most of our choices fall in a gray zone. The red palette makes a real pattern feel more urgent than it might otherwise, and the population bubbles redirect attention toward a supportable but incomplete explanation. Neither feels outright dishonest, but neither is fully neutral either. That gray zone was harder to navigate than we expected and is where the true questions of persuasive, descriptive, and misleading come into play. 
+                </p>
             </section>
         </main>
     <script defer src="https://static.cloudflareinsights.com/beacon.min.js/v8c78df7c7c0f484497ecbca7046644da1771523124516" integrity="sha512-8DS7rgIrAmghBFwoOTujcf6D9rXvH8xm8JQ1Ja01h9QX8EzXldiszufYa4IFfKdLUKTTrnSFXLDkUEOTrZQ8Qg==" data-cf-beacon='{"version":"2024.11.0","token":"c822b88e119346678db149ed7b7721c9","r":1,"server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
