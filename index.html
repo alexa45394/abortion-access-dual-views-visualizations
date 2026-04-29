@@ -115,13 +115,6 @@
                 box-sizing: border-box;
                 width: calc(100% + 1em);
 
-                figure img {
-                    max-width: 100%;
-                    height: auto;
-                    display: block;
-                    object-fit: contain;
-                }
-
                 > figcaption {
                     font: 500 75% var(--font-sans);
                     background: var(--color-neutral-95);
@@ -148,6 +141,12 @@
                     }
                 }
             }
+
+            figure img {
+                width: 100%;
+                height: auto;
+                display: block;
+            }
         </style>
     </head>
 
@@ -169,8 +168,8 @@
                 <h4>Abortion-access issues are subject to regional variation.</h4>
 
                 <figure>
-                    <img src="images/for_viz.png" alt="Choropleth map of the United States colored blue to red showing the percentage of women aged 15-44 living in a county with no abortion clinic. Midwest region is deepest red; West and Northeast are predominantly blue." />
-                    <figcaption>A state-level choropleth map encoding the percentage of women aged 15–44 who live in a county with no abortion clinic (Guttmacher Institute, 2020). States in the South, Midwest, and portions of Mountain West are deeply red, indicating that the majority of women in those states live far from any provider, while western and northeastern states appear blue, signaling comparatively better local access. The geographic clustering makes the regional disparity immediately legible.</figcaption>
+                    <img src="images/for_viz.png" alt="US choropleth map where Southern and Midwestern states appear deep red, indicating a high percentage of women living in counties with no abortion clinic, while coastal states appear light pink or white." />
+                    <figcaption>A state-level choropleth map showing the percentage of women aged 15–44 living in a county without an abortion clinic, by state, in 2020 (Guttmacher Institute). States are shaded on a white-to-red scale where deeper red indicates a higher share of women without local clinic access. Southern and Midwestern states — particularly Wyoming, Missouri, West Virginia, and Mississippi — cluster toward the dark red end of the scale, while northeastern and western coastal states appear notably lighter, making the regional disparity immediately visible.</figcaption>
                 </figure>
 
                 <p>Design Decisions and Rationale:</p>
@@ -187,8 +186,8 @@
                 <h4>Abortion-access burdens are driven by population size, not geographic region.</h4>
 
                 <figure>
-                    <img src="images/against_viz.png" alt="Bubble map of the United States where each state is represented by a circle sized by total population and colored blue by number of abortion clinics. Large, dark-blue circles appear in California, New York, and Florida. Small pale circles fill the interior of the country." />
-                    <figcaption>A proportional symbol map encoding both clinic count (blue color gradient, light = few, dark = many) and total state population (circle area) for all 50 states (Guttmacher Institute, 2020). The largest, darkest circles—representing the most populated states with the most clinics—dominate the visual field, suggesting that clinic availability tracks population rather than geography. Sparsely populated interior states appear as small, pale dots, implying that low clinic counts may simply reflect low demand rather than geographic inequity.</figcaption>
+                    <img src="images/against_viz.png" alt="Bubble map of the US where large dark blue circles represent populous states with many abortion clinics, concentrated on the coasts, and small pale circles represent sparsely populated interior states with few clinics." />
+                    <figcaption>A proportional symbol map where each state is represented by a circle sized by total 2020 population and colored by number of abortion clinics (light teal = few, dark blue = many). California, New York, and Florida have large dark circles that visually showcase the correlation between states with large populations and many abortion clinics, while the interior of the country is filled with small, pale dots. The map's subtitle reinforces the interpretation: raw clinic counts tend to mirror population size, so sparse coverage in the Mountain West and Midwest may reflect low population rather than geographic inequity.</figcaption>
                 </figure>
 
                 <p>Design Decisions and Rationale:</p>
